@@ -34,3 +34,4 @@
 34. debug: capture benchmark artifacts for the demo path
 35. improve: add preemptive latency router
 36. improve: align first-person docs and explainable comments
+37. improve: sanitize public artifact and trace paths
