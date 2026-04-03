@@ -7,3 +7,4 @@
 07. dev: wire generation and review pipeline
 08. dev: add FastAPI app and health surface
 09. dev: add operator dashboard template
+10. dev: add baseline pipeline tests
