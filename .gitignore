@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+runs/*.jsonl
+runs/traces/
+runs/benchmarks/
+runs/evals/*
+!runs/evals/benchmark-20260403100247.json
+!runs/benchmarks/
+!runs/benchmarks/20260403100247/
+runs/benchmarks/20260403100247/*
+!runs/benchmarks/20260403100247/traces/
+!runs/benchmarks/20260403100247/traces/*.json
