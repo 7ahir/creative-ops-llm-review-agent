@@ -20,3 +20,4 @@
 20. dev: add Ollama provider surface
 21. debug: tune local qwen provider defaults
 22. debug: probe local resource fit for demo models
+23. improve: narrow the local demo target to smaller models
