@@ -29,3 +29,4 @@
 29. improve: add latency budget fallback
 30. improve: expose fallback settings in provider metadata
 31. dev: surface fallback metrics in observability summary
+32. improve: show provider mix and fallback state in dashboard
