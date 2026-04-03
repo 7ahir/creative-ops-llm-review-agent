@@ -17,3 +17,4 @@
 17. dev: add JSON-RPC server for MCP-style access
 18. debug: verify hosted provider configuration path
 19. improve: keep hosted provider optional in local setup
+20. dev: add Ollama provider surface
