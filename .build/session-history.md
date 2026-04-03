@@ -19,3 +19,4 @@
 19. improve: keep hosted provider optional in local setup
 20. dev: add Ollama provider surface
 21. debug: tune local qwen provider defaults
+22. debug: probe local resource fit for demo models
