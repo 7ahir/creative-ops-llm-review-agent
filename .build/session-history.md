@@ -13,3 +13,4 @@
 13. dev: persist traces and spans locally
 14. improve: refine README quickstart and local workflow
 15. dev: add OpenAI provider surface
+16. dev: expose local tool runtime for constraint lookups
