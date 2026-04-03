@@ -16,3 +16,4 @@
 16. dev: expose local tool runtime for constraint lookups
 17. dev: add JSON-RPC server for MCP-style access
 18. debug: verify hosted provider configuration path
+19. improve: keep hosted provider optional in local setup
