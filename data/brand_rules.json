@@ -1,0 +1,25 @@
+{
+  "acme": {
+    "brand_name": "Acme Creative Studio",
+    "approved_tone_descriptors": [
+      "clear",
+      "confident",
+      "helpful"
+    ],
+    "avoid_terms": [
+      "guaranteed",
+      "instant",
+      "#1",
+      "magic"
+    ],
+    "required_phrases": [
+      "Teams first"
+    ],
+    "style_notes": [
+      "Lead with the practical benefit before the feature.",
+      "Prefer specific workflow language over hype.",
+      "Use concise CTAs that reflect the brief."
+    ]
+  }
+}
+

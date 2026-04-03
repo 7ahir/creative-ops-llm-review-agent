@@ -1,0 +1,38 @@
+{
+  "display_300x250": {
+    "placement": "display_300x250",
+    "channel": "display",
+    "max_headline_chars": 35,
+    "max_description_chars": 90,
+    "max_cta_chars": 18,
+    "requires_cta": true,
+    "notes": [
+      "Keep the headline compact because the slot is visually dense.",
+      "Descriptions should land the value quickly."
+    ]
+  },
+  "display_728x90": {
+    "placement": "display_728x90",
+    "channel": "display",
+    "max_headline_chars": 40,
+    "max_description_chars": 70,
+    "max_cta_chars": 18,
+    "requires_cta": true,
+    "notes": [
+      "Horizontal placement favors a sharper headline.",
+      "Descriptions should be trimmed aggressively."
+    ]
+  },
+  "social_1200x628": {
+    "placement": "social_1200x628",
+    "channel": "social",
+    "max_headline_chars": 50,
+    "max_description_chars": 110,
+    "max_cta_chars": 18,
+    "requires_cta": true,
+    "notes": [
+      "This slot tolerates more context, but clarity still wins."
+    ]
+  }
+}
+

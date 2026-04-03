@@ -1,0 +1,75 @@
+[
+  {
+    "case_id": "retail-launch-01",
+    "notes": "Retail brand wants concise display copy with a direct CTA.",
+    "brief": {
+      "brand_key": "acme",
+      "campaign_name": "Retail Spring Launch",
+      "product_name": "Acme Creative Studio",
+      "audience": "performance marketers at retail brands",
+      "objective": "Speed up banner review without losing compliance",
+      "key_message": "Review banner copy against brand and placement constraints before launch.",
+      "tone": "confident",
+      "offer_details": "Built for busy teams. Terms apply.",
+      "required_terms": [
+        "Terms apply"
+      ],
+      "forbidden_terms": [
+        "guaranteed",
+        "instant"
+      ],
+      "call_to_action": "Book a demo",
+      "channel": "display",
+      "placement": "display_300x250",
+      "landing_page": "https://example.com/demo"
+    }
+  },
+  {
+    "case_id": "fashion-ops-02",
+    "notes": "Horizontal placement with tighter copy budget.",
+    "brief": {
+      "brand_key": "acme",
+      "campaign_name": "Fashion Ops Refresh",
+      "product_name": "Acme Creative Studio",
+      "audience": "creative operations leads at fashion brands",
+      "objective": "Reduce late-stage creative QA churn",
+      "key_message": "Catch copy issues before launch so teams can ship faster with less review debt.",
+      "tone": "helpful",
+      "offer_details": "Clear review signals for launch teams. Terms apply.",
+      "required_terms": [
+        "Terms apply"
+      ],
+      "forbidden_terms": [
+        "guaranteed"
+      ],
+      "call_to_action": "See the workflow",
+      "channel": "display",
+      "placement": "display_728x90"
+    }
+  },
+  {
+    "case_id": "social-creative-03",
+    "notes": "Social placement gives slightly more room but still penalizes hype.",
+    "brief": {
+      "brand_key": "acme",
+      "campaign_name": "Creative Workflow Push",
+      "product_name": "Acme Creative Studio",
+      "audience": "growth teams shipping paid social creative weekly",
+      "objective": "Improve confidence in social copy before launch",
+      "key_message": "Move from brief to review-ready copy with clearer brand and policy checks.",
+      "tone": "direct",
+      "offer_details": "Built for busy teams. Terms apply.",
+      "required_terms": [
+        "Terms apply"
+      ],
+      "forbidden_terms": [
+        "instant",
+        "#1"
+      ],
+      "call_to_action": "Try the review",
+      "channel": "social",
+      "placement": "social_1200x628"
+    }
+  }
+]
+

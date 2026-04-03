@@ -1,0 +1,19 @@
+{
+  "global": {
+    "disallowed_claims": [
+      "guaranteed",
+      "instant",
+      "#1",
+      "risk-free"
+    ],
+    "required_disclaimer_terms": [
+      "Terms apply"
+    ],
+    "sensitive_terms": [
+      "free money",
+      "no effort",
+      "always wins"
+    ]
+  }
+}
+
