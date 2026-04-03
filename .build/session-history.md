@@ -23,3 +23,4 @@
 23. improve: narrow the local demo target to smaller models
 24. debug: switch Ollama integration to native chat flow
 25. improve: inject local constraints server-side
+26. improve: validate schema-shaped JSON outputs
