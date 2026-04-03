@@ -35,3 +35,4 @@
 35. improve: add preemptive latency router
 36. improve: align first-person docs and explainable comments
 37. improve: sanitize public artifact and trace paths
+38. improve: add MIT license
