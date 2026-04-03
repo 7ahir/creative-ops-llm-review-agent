@@ -14,3 +14,4 @@
 14. improve: refine README quickstart and local workflow
 15. dev: add OpenAI provider surface
 16. dev: expose local tool runtime for constraint lookups
+17. dev: add JSON-RPC server for MCP-style access
