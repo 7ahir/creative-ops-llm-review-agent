@@ -24,3 +24,4 @@
 24. debug: switch Ollama integration to native chat flow
 25. improve: inject local constraints server-side
 26. improve: validate schema-shaped JSON outputs
+27. dev: add repair loop for failed variants
