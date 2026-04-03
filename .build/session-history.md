@@ -9,3 +9,4 @@
 09. dev: add operator dashboard template
 10. dev: add baseline pipeline tests
 11. dev: add architecture and case study docs
+12. dev: add eval runner command
