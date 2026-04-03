@@ -27,3 +27,4 @@
 27. dev: add repair loop for failed variants
 28. debug: tighten prompt and timeout handling
 29. improve: add latency budget fallback
+30. improve: expose fallback settings in provider metadata
