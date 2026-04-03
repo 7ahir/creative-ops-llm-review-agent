@@ -28,3 +28,4 @@
 28. debug: tighten prompt and timeout handling
 29. improve: add latency budget fallback
 30. improve: expose fallback settings in provider metadata
+31. dev: surface fallback metrics in observability summary
