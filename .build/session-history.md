@@ -11,3 +11,4 @@
 11. dev: add architecture and case study docs
 12. dev: add eval runner command
 13. dev: persist traces and spans locally
+14. improve: refine README quickstart and local workflow
