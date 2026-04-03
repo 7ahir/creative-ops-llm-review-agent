@@ -32,3 +32,4 @@
 32. improve: show provider mix and fallback state in dashboard
 33. dev: add benchmark matrix runner
 34. debug: capture benchmark artifacts for the demo path
+35. improve: add preemptive latency router
