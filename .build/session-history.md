@@ -10,3 +10,4 @@
 10. dev: add baseline pipeline tests
 11. dev: add architecture and case study docs
 12. dev: add eval runner command
+13. dev: persist traces and spans locally
