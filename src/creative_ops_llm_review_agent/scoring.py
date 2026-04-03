@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Dict, List
 
-from creative_ops_review_agent.models import (
+from creative_ops_llm_review_agent.models import (
     BrandRuleSet,
     ChannelSpec,
     CreativeBrief,

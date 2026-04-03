@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.knowledge import KnowledgeStore
-from creative_ops_review_agent.models import CreativeBrief
-from creative_ops_review_agent.providers.openai_responses import OpenAIResponsesCreativeProvider
-from creative_ops_review_agent.tool_runtime import ConstraintToolRuntime
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.knowledge import KnowledgeStore
+from creative_ops_llm_review_agent.models import CreativeBrief
+from creative_ops_llm_review_agent.providers.openai_responses import OpenAIResponsesCreativeProvider
+from creative_ops_llm_review_agent.tool_runtime import ConstraintToolRuntime
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

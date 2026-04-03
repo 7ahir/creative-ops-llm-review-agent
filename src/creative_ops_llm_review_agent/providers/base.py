@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from creative_ops_review_agent.models import (
+from creative_ops_llm_review_agent.models import (
     BrandRuleSet,
     ChannelSpec,
     CreativeBrief,

@@ -230,7 +230,7 @@ def run_benchmark_matrix(
 
 
 def _build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Run offline evaluation for the Creative Ops Review Agent.")
+    parser = argparse.ArgumentParser(description="Run offline evaluation for the Creative Ops LLM Review Agent.")
     parser.add_argument(
         "--dataset",
         default="data/golden_set.json",

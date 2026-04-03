@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.knowledge import KnowledgeStore
-from creative_ops_review_agent.models import CreativeBrief, GeneratedVariant
-from creative_ops_review_agent.repair import repair_variant_set
-from creative_ops_review_agent.scoring import review_variant
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.knowledge import KnowledgeStore
+from creative_ops_llm_review_agent.models import CreativeBrief, GeneratedVariant
+from creative_ops_llm_review_agent.repair import repair_variant_set
+from creative_ops_llm_review_agent.scoring import review_variant
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

@@ -2,7 +2,7 @@
 
 ## Title
 
-Creative Ops Review Agent: the evaluable, observable LLM workflow I built for banner copy generation and review.
+Creative Ops LLM Review Agent: the evaluable, observable LLM workflow I built for banner copy generation and review.
 
 ## The Problem
 

@@ -3,7 +3,7 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "creative-ops-review-agent"
+name = "creative-ops-llm-review-agent"
 version = "0.1.0"
 description = "Creative Ops LLM review showcase I built with evaluation and observability."
 readme = "README.md"
@@ -29,13 +29,13 @@ dev = [
 ]
 
 [project.scripts]
-creative-ops-api = "creative_ops_review_agent.api:serve"
-creative-ops-eval = "creative_ops_review_agent.eval_runner:main"
-creative-ops-benchmark = "creative_ops_review_agent.eval_runner:benchmark_main"
-creative-ops-mcp = "creative_ops_review_agent.mcp_server:serve"
+creative-ops-api = "creative_ops_llm_review_agent.api:serve"
+creative-ops-eval = "creative_ops_llm_review_agent.eval_runner:main"
+creative-ops-benchmark = "creative_ops_llm_review_agent.eval_runner:benchmark_main"
+creative-ops-mcp = "creative_ops_llm_review_agent.mcp_server:serve"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/creative_ops_review_agent"]
+packages = ["src/creative_ops_llm_review_agent"]
 
 [tool.pytest.ini_options]
 pythonpath = [

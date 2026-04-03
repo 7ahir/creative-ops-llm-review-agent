@@ -15,7 +15,7 @@ from .pipeline import CreativeOpsPipeline
 
 
 def create_app(settings: Optional[Settings] = None) -> FastAPI:
-    app = FastAPI(title="Creative Ops Review Agent", version="0.1.0")
+    app = FastAPI(title="Creative Ops LLM Review Agent", version="0.1.0")
     active_settings = settings or Settings.load()
     pipeline = CreativeOpsPipeline(active_settings)
     templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
@@ -90,4 +90,4 @@ app = create_app()
 
 
 def serve() -> None:
-    uvicorn.run("creative_ops_review_agent.api:app", host="127.0.0.1", port=8000, reload=False)
+    uvicorn.run("creative_ops_llm_review_agent.api:app", host="127.0.0.1", port=8000, reload=False)

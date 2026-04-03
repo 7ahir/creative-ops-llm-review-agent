@@ -2,8 +2,8 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.mcp_server import create_mcp_app
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.mcp_server import create_mcp_app
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

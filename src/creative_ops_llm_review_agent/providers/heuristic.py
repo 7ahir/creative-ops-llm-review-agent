@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import List
 
-from creative_ops_review_agent.models import (
+from creative_ops_llm_review_agent.models import (
     BrandRuleSet,
     ChannelSpec,
     CreativeBrief,
@@ -11,8 +11,8 @@ from creative_ops_review_agent.models import (
     ProviderOutput,
     UsageMetrics,
 )
-from creative_ops_review_agent.providers.base import CreativeProvider
-from creative_ops_review_agent.utils import slug, truncate
+from creative_ops_llm_review_agent.providers.base import CreativeProvider
+from creative_ops_llm_review_agent.utils import slug, truncate
 
 
 class HeuristicCreativeProvider(CreativeProvider):

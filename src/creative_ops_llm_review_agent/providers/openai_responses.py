@@ -5,8 +5,8 @@ from typing import Any, Dict, List, Optional
 
 from openai import OpenAI
 
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.models import (
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.models import (
     BrandRuleSet,
     ChannelSpec,
     CreativeBrief,
@@ -15,9 +15,9 @@ from creative_ops_review_agent.models import (
     ProviderOutput,
     UsageMetrics,
 )
-from creative_ops_review_agent.providers.base import CreativeProvider
-from creative_ops_review_agent.tool_runtime import ConstraintToolRuntime
-from creative_ops_review_agent.utils import slug
+from creative_ops_llm_review_agent.providers.base import CreativeProvider
+from creative_ops_llm_review_agent.tool_runtime import ConstraintToolRuntime
+from creative_ops_llm_review_agent.utils import slug
 
 
 class OpenAIResponsesCreativeProvider(CreativeProvider):

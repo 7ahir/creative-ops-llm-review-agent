@@ -4,11 +4,11 @@ import time
 
 from fastapi.testclient import TestClient
 
-from creative_ops_review_agent.api import create_app
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.models import CreativeBrief
-from creative_ops_review_agent.pipeline import CreativeOpsPipeline
-from creative_ops_review_agent.providers.heuristic import HeuristicCreativeProvider
+from creative_ops_llm_review_agent.api import create_app
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.models import CreativeBrief
+from creative_ops_llm_review_agent.pipeline import CreativeOpsPipeline
+from creative_ops_llm_review_agent.providers.heuristic import HeuristicCreativeProvider
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -186,7 +186,7 @@ def test_pipeline_falls_back_when_ollama_exceeds_latency_budget(tmp_path: Path, 
             return HeuristicCreativeProvider()
         raise AssertionError("Unexpected provider request: %s" % name)
 
-    monkeypatch.setattr("creative_ops_review_agent.pipeline.get_provider", fake_get_provider)
+    monkeypatch.setattr("creative_ops_llm_review_agent.pipeline.get_provider", fake_get_provider)
 
     response = pipeline.generate_and_review(CreativeBrief.model_validate(sample_brief()), strategy="tool_aware")
 
@@ -216,7 +216,7 @@ def test_pipeline_falls_back_when_ollama_errors(tmp_path: Path, monkeypatch) -> 
             return HeuristicCreativeProvider()
         raise AssertionError("Unexpected provider request: %s" % name)
 
-    monkeypatch.setattr("creative_ops_review_agent.pipeline.get_provider", fake_get_provider)
+    monkeypatch.setattr("creative_ops_llm_review_agent.pipeline.get_provider", fake_get_provider)
 
     response = pipeline.generate_and_review(CreativeBrief.model_validate(sample_brief()), strategy="tool_aware")
 
@@ -245,7 +245,7 @@ def test_pipeline_routes_preemptively_when_recent_ollama_latency_predicts_miss(
             return HeuristicCreativeProvider()
         raise AssertionError("Unexpected provider request: %s" % name)
 
-    monkeypatch.setattr("creative_ops_review_agent.pipeline.get_provider", fake_get_provider)
+    monkeypatch.setattr("creative_ops_llm_review_agent.pipeline.get_provider", fake_get_provider)
 
     response = pipeline.generate_and_review(CreativeBrief.model_validate(sample_brief()), strategy="tool_aware")
 

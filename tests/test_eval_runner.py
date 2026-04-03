@@ -1,9 +1,9 @@
 from datetime import datetime, timezone
 from pathlib import Path
 
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.eval_runner import run_benchmark_matrix, run_evaluation
-from creative_ops_review_agent.models import (
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.eval_runner import run_benchmark_matrix, run_evaluation
+from creative_ops_llm_review_agent.models import (
     CreativeResponse,
     GeneratedVariant,
     RequestMetrics,
@@ -123,7 +123,7 @@ def test_benchmark_matrix_captures_provider_mix_and_fallbacks(tmp_path: Path, mo
                 trace_path=str(tmp_path / ("%s.json" % brief.campaign_name.replace(" ", "-"))),
             )
 
-    monkeypatch.setattr("creative_ops_review_agent.eval_runner.CreativeOpsPipeline", FakePipeline)
+    monkeypatch.setattr("creative_ops_llm_review_agent.eval_runner.CreativeOpsPipeline", FakePipeline)
 
     report = run_benchmark_matrix(
         settings=settings,

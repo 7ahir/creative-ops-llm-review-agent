@@ -1,4 +1,4 @@
-# Creative Ops Review Agent
+# Creative Ops LLM Review Agent
 
 I built this as a production-minded creative workflow project for real LLM system design and evaluation.
 
@@ -35,10 +35,11 @@ I kept the scope intentionally narrow. I was not trying to build a full ads plat
 
 This short GIF shows the operator flow I use locally: open the dashboard, run a request, inspect the generated variants, and see the trace-driven metrics update.
 
-![Creative Ops Review Agent demo](docs/assets/demo.gif)
+![Creative Ops LLM Review Agent demo](docs/assets/demo.gif)
 
 ## Build Provenance
 
+I built this with Codex as an engineering partner.
 
 That means the repo was not handwritten from scratch in a vacuum. I used Codex to scaffold, iterate, debug, and tighten the implementation quickly, then I steered the scope, reviewed the outputs, chose the tradeoffs, and curated what stayed in the final project.
 
@@ -106,11 +107,11 @@ High-level components:
 ## Project Structure
 
 ```text
-creative-ops-review-agent/
+creative-ops-llm-review-agent/
 ├── data/
 ├── docs/
 ├── runs/
-├── src/creative_ops_review_agent/
+├── src/creative_ops_llm_review_agent/
 │   ├── api.py
 │   ├── eval_runner.py
 │   ├── knowledge.py
@@ -126,7 +127,7 @@ creative-ops-review-agent/
 ## Setup
 
 ```bash
-cd creative-ops-review-agent
+cd creative-ops-llm-review-agent
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"

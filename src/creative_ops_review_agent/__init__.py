@@ -1,2 +1,0 @@
-"""Creative Ops Review Agent."""
-

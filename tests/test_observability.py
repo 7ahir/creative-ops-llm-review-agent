@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-from creative_ops_review_agent.config import Settings
-from creative_ops_review_agent.observability import summarize_traces
+from creative_ops_llm_review_agent.config import Settings
+from creative_ops_llm_review_agent.observability import summarize_traces
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

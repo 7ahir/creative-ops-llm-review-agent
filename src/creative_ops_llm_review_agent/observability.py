@@ -103,7 +103,7 @@ class TraceRecorder:
         self.started_at = time.perf_counter()
         self.stages: List[StageRecord] = []
         self.events: List[Dict[str, Any]] = []
-        self.tracer = trace.get_tracer("creative_ops_review_agent")
+        self.tracer = trace.get_tracer("creative_ops_llm_review_agent")
 
     @contextmanager
     def stage(self, name: str, metadata: Optional[Dict[str, Any]] = None) -> Iterator[None]:
