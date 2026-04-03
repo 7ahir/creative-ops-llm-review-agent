@@ -26,3 +26,4 @@
 26. improve: validate schema-shaped JSON outputs
 27. dev: add repair loop for failed variants
 28. debug: tighten prompt and timeout handling
+29. improve: add latency budget fallback
