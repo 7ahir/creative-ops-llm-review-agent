@@ -1,0 +1,198 @@
+{
+  "trace_id": "20260403100247229415",
+  "created_at": "2026-04-03T10:02:47.231035Z",
+  "provider": "heuristic-provider",
+  "strategy": "tool_aware",
+  "brief": {
+    "brief_id": null,
+    "brand_key": "acme",
+    "campaign_name": "Retail Spring Launch",
+    "product_name": "Acme Creative Studio",
+    "audience": "performance marketers at retail brands",
+    "objective": "Speed up banner review without losing compliance",
+    "key_message": "Review banner copy against brand and placement constraints before launch.",
+    "tone": "confident",
+    "offer_details": "Built for busy teams. Terms apply.",
+    "required_terms": [
+      "Terms apply"
+    ],
+    "forbidden_terms": [
+      "guaranteed",
+      "instant"
+    ],
+    "call_to_action": "Book a demo",
+    "channel": "display",
+    "placement": "display_300x250",
+    "landing_page": "https://example.com/demo",
+    "locale": "en-US"
+  },
+  "variants": [
+    {
+      "variant_id": "variant-1a933420",
+      "headline": "Acme Creative Studio: Review banne\u2026",
+      "description": "Review banner copy against brand and placement constraints before launch for performance\u2026",
+      "cta": "Book a demo",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    },
+    {
+      "variant_id": "variant-d4cde07d",
+      "headline": "Teams first Acme Creative Studio",
+      "description": "Built for performance marketers at retail brands. Built for busy teams. Terms apply",
+      "cta": "Book a demo",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    },
+    {
+      "variant_id": "variant-287202b4",
+      "headline": "Move from brief to banner with Acm\u2026",
+      "description": "Review banner copy against brand and placement constraints before launch. Clear review si\u2026",
+      "cta": "Book a demo",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    }
+  ],
+  "reviews": [
+    {
+      "variant_id": "variant-1a933420",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 1.0
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-d4cde07d",
+      "passed": true,
+      "score": {
+        "overall": 0.99,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-287202b4",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 1.0
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        }
+      ]
+    }
+  ],
+  "best_variant_id": "variant-d4cde07d",
+  "prompt_version": "heuristic-tool-aware-v2",
+  "metrics": {
+    "total_latency_ms": 1.61,
+    "average_variant_score": 0.983,
+    "passed_variant_count": 3,
+    "total_variant_count": 3,
+    "estimated_cost_usd": 0.0006
+  },
+  "stages": [
+    {
+      "name": "load_context",
+      "duration_ms": 0.36,
+      "metadata": {
+        "brand_key": "acme",
+        "placement": "display_300x250"
+      }
+    },
+    {
+      "name": "generate_variants",
+      "duration_ms": 0.17,
+      "metadata": {
+        "strategy": "tool_aware",
+        "provider": "heuristic",
+        "attempt": "primary"
+      }
+    },
+    {
+      "name": "review_variants",
+      "duration_ms": 0.08,
+      "metadata": {
+        "variant_count": 3
+      }
+    },
+    {
+      "name": "select_best_variant",
+      "duration_ms": 0.03,
+      "metadata": {
+        "variant_count": 3
+      }
+    }
+  ],
+  "tools_consulted": [
+    "brand_rules",
+    "channel_specs",
+    "policy_rules"
+  ],
+  "fallback": null,
+  "trace_path": null,
+  "provider_usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 89,
+    "estimated_cost_usd": 0.0006
+  },
+  "prompt_preview": "Campaign: Retail Spring Launch\nAudience: performance marketers at retail brands\nObjective: Speed up banner review without losing compliance\nKey message: Review banner copy against brand and placement constraints before launch.\nStrategy: tool_aware\nBrand notes: Lead with the practical benefit before the feature., Prefer specific workflow language over hype.\nAvoid terms: guaranteed, instant, #1, magic\nPlacement caps: headline=35 description=90 cta=18\nPolicy disallowed claims: guaranteed, instant, #1",
+  "provider_raw_output_text": null,
+  "provider_tool_events": [],
+  "events": [
+    {
+      "timestamp": "2026-04-03T10:02:47.229664+00:00",
+      "message": "request_started",
+      "payload": {
+        "strategy": "tool_aware",
+        "provider": "heuristic",
+        "campaign_name": "Retail Spring Launch"
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:02:47.230622+00:00",
+      "message": "provider_completed",
+      "payload": {
+        "provider": "heuristic-provider",
+        "provider_key": "heuristic",
+        "attempt": "primary",
+        "observed_latency_ms": 0.05,
+        "prompt_version": "heuristic-tool-aware-v2",
+        "tool_events": []
+      }
+    }
+  ]
+}

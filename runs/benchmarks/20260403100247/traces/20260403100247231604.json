@@ -1,0 +1,202 @@
+{
+  "trace_id": "20260403100247231604",
+  "created_at": "2026-04-03T10:02:47.232388Z",
+  "provider": "heuristic-provider",
+  "strategy": "tool_aware",
+  "brief": {
+    "brief_id": null,
+    "brand_key": "acme",
+    "campaign_name": "Fashion Ops Refresh",
+    "product_name": "Acme Creative Studio",
+    "audience": "creative operations leads at fashion brands",
+    "objective": "Reduce late-stage creative QA churn",
+    "key_message": "Catch copy issues before launch so teams can ship faster with less review debt.",
+    "tone": "helpful",
+    "offer_details": "Clear review signals for launch teams. Terms apply.",
+    "required_terms": [
+      "Terms apply"
+    ],
+    "forbidden_terms": [
+      "guaranteed"
+    ],
+    "call_to_action": "See the workflow",
+    "channel": "display",
+    "placement": "display_728x90",
+    "landing_page": null,
+    "locale": "en-US"
+  },
+  "variants": [
+    {
+      "variant_id": "variant-5e6a93cd",
+      "headline": "Acme Creative Studio: Catch copy issues\u2026",
+      "description": "Catch copy issues before launch so teams can ship faster with less re\u2026",
+      "cta": "See the workflow",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    },
+    {
+      "variant_id": "variant-945de6df",
+      "headline": "Teams first Acme Creative Studio",
+      "description": "Built for creative operations leads at fashion brands. Clear review s\u2026",
+      "cta": "See the workflow",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    },
+    {
+      "variant_id": "variant-34a0212f",
+      "headline": "Move from brief to banner with Acme Cre\u2026",
+      "description": "Catch copy issues before launch so teams can ship faster with less re\u2026",
+      "cta": "See the workflow",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    }
+  ],
+  "reviews": [
+    {
+      "variant_id": "variant-5e6a93cd",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 1.0
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-945de6df",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.96,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-34a0212f",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 1.0
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        }
+      ]
+    }
+  ],
+  "best_variant_id": "variant-5e6a93cd",
+  "prompt_version": "heuristic-tool-aware-v2",
+  "metrics": {
+    "total_latency_ms": 0.78,
+    "average_variant_score": 0.98,
+    "passed_variant_count": 3,
+    "total_variant_count": 3,
+    "estimated_cost_usd": 0.0007
+  },
+  "stages": [
+    {
+      "name": "load_context",
+      "duration_ms": 0.19,
+      "metadata": {
+        "brand_key": "acme",
+        "placement": "display_728x90"
+      }
+    },
+    {
+      "name": "generate_variants",
+      "duration_ms": 0.1,
+      "metadata": {
+        "strategy": "tool_aware",
+        "provider": "heuristic",
+        "attempt": "primary"
+      }
+    },
+    {
+      "name": "review_variants",
+      "duration_ms": 0.13,
+      "metadata": {
+        "variant_count": 3
+      }
+    },
+    {
+      "name": "select_best_variant",
+      "duration_ms": 0.03,
+      "metadata": {
+        "variant_count": 3
+      }
+    }
+  ],
+  "tools_consulted": [
+    "brand_rules",
+    "channel_specs",
+    "policy_rules"
+  ],
+  "fallback": null,
+  "trace_path": null,
+  "provider_usage": {
+    "prompt_tokens": 95,
+    "completion_tokens": 91,
+    "estimated_cost_usd": 0.0007
+  },
+  "prompt_preview": "Campaign: Fashion Ops Refresh\nAudience: creative operations leads at fashion brands\nObjective: Reduce late-stage creative QA churn\nKey message: Catch copy issues before launch so teams can ship faster with less review debt.\nStrategy: tool_aware\nBrand notes: Lead with the practical benefit before the feature., Prefer specific workflow language over hype.\nAvoid terms: guaranteed, instant, #1, magic\nPlacement caps: headline=40 description=70 cta=18\nPolicy disallowed claims: guaranteed, instant, #1",
+  "provider_raw_output_text": null,
+  "provider_tool_events": [],
+  "events": [
+    {
+      "timestamp": "2026-04-03T10:02:47.231643+00:00",
+      "message": "request_started",
+      "payload": {
+        "strategy": "tool_aware",
+        "provider": "heuristic",
+        "campaign_name": "Fashion Ops Refresh"
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:02:47.232006+00:00",
+      "message": "provider_completed",
+      "payload": {
+        "provider": "heuristic-provider",
+        "provider_key": "heuristic",
+        "attempt": "primary",
+        "observed_latency_ms": 0.03,
+        "prompt_version": "heuristic-tool-aware-v2",
+        "tool_events": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "trace_id": "20260403100502847163",
+  "created_at": "2026-04-03T10:06:56.800474Z",
+  "provider": "ollama-chat",
+  "strategy": "tool_aware",
+  "brief": {
+    "brief_id": null,
+    "brand_key": "acme",
+    "campaign_name": "Fashion Ops Refresh",
+    "product_name": "Acme Creative Studio",
+    "audience": "creative operations leads at fashion brands",
+    "objective": "Reduce late-stage creative QA churn",
+    "key_message": "Catch copy issues before launch so teams can ship faster with less review debt.",
+    "tone": "helpful",
+    "offer_details": "Clear review signals for launch teams. Terms apply.",
+    "required_terms": [
+      "Terms apply"
+    ],
+    "forbidden_terms": [
+      "guaranteed"
+    ],
+    "call_to_action": "See the workflow",
+    "channel": "display",
+    "placement": "display_728x90",
+    "landing_page": null,
+    "locale": "en-US"
+  },
+  "variants": [
+    {
+      "variant_id": "variant-f8b2d376",
+      "headline": "Teams first catch before launch",
+      "description": "Clear review signals for launch teams. Terms apply.",
+      "cta": "See the workflow",
+      "rationale": "Auto-repaired for policy, brand, and placement compliance."
+    },
+    {
+      "variant_id": "variant-02d59c71",
+      "headline": "Teams first banner review",
+      "description": "Acme Creative Studio for busy teams. Terms apply.",
+      "cta": "See the workflow",
+      "rationale": "Auto-repaired for policy, brand, and placement compliance."
+    },
+    {
+      "variant_id": "variant-86915411",
+      "headline": "Catch copy, Teams first",
+      "description": "Catch copy with clear checks. Terms apply.",
+      "cta": "See the workflow",
+      "rationale": "Auto-repaired for policy, brand, and placement compliance."
+    }
+  ],
+  "reviews": [
+    {
+      "variant_id": "variant-f8b2d376",
+      "passed": true,
+      "score": {
+        "overall": 1.0,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 1.0
+      },
+      "issues": []
+    },
+    {
+      "variant_id": "variant-02d59c71",
+      "passed": true,
+      "score": {
+        "overall": 0.99,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-86915411",
+      "passed": true,
+      "score": {
+        "overall": 1.0,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 1.0
+      },
+      "issues": []
+    }
+  ],
+  "best_variant_id": "variant-f8b2d376",
+  "prompt_version": "ollama-native-qwen3:4b-tool_aware-v2",
+  "metrics": {
+    "total_latency_ms": 113954.5,
+    "average_variant_score": 0.997,
+    "passed_variant_count": 3,
+    "total_variant_count": 3,
+    "estimated_cost_usd": 0.0
+  },
+  "stages": [
+    {
+      "name": "load_context",
+      "duration_ms": 1.41,
+      "metadata": {
+        "brand_key": "acme",
+        "placement": "display_728x90"
+      }
+    },
+    {
+      "name": "generate_variants",
+      "duration_ms": 113949.93,
+      "metadata": {
+        "strategy": "tool_aware",
+        "provider": "ollama",
+        "attempt": "primary"
+      }
+    },
+    {
+      "name": "review_variants",
+      "duration_ms": 0.38,
+      "metadata": {
+        "variant_count": 3
+      }
+    },
+    {
+      "name": "repair_variants",
+      "duration_ms": 0.7,
+      "metadata": {
+        "failing_variant_count": 3
+      }
+    },
+    {
+      "name": "select_best_variant",
+      "duration_ms": 0.07,
+      "metadata": {
+        "variant_count": 3
+      }
+    }
+  ],
+  "tools_consulted": [
+    "get_brand_rules",
+    "get_channel_spec",
+    "get_policy_rules"
+  ],
+  "fallback": null,
+  "trace_path": null,
+  "provider_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "estimated_cost_usd": 0.0
+  },
+  "prompt_preview": "Model=qwen3:4b Strategy=tool_aware Context=server_injected Campaign=Fashion Ops Refresh Placement=display_728x90",
+  "provider_raw_output_text": "{\n  \"variants\": [\n    {\n      \"headline\": \"Fix launch copy issues early with clear review signals\",\n      \"description\": \"Catch problems before they slow down your fashion brand launch\",\n      \"cta\": \"See workflow\"\n   ,\n    \"rationale\": \"Highlights early fix for faster shipping\"\n    },\n    {\n      \"headline\": \"Pre-empt copy flaws with actionable review signals\",\n      \"description\": \"Reduce late-stage QA churn for smoother fashion launches\",\n      \"cta\": \"See workflow\"\n    ,\n    \"rationale\": \"Focuses on actionable signals for smoother launches\"\n    },\n    {\n      \"headline\": \"Clear review signals to catch copy issues before launch\",\n      \"description\": \"Ship fashion brands faster with less review debt\",\n      \"cta\": \"See workflow\"\n    ,\n    \"rationale\": \"Directly addresses key message with concise phrasing\"\n    }\n  ]\n}\n",
+  "provider_tool_events": [
+    {
+      "name": "get_brand_rules",
+      "source": "server_context",
+      "arguments": {
+        "brand_key": "acme"
+      },
+      "output": {
+        "brand_name": "Acme Creative Studio",
+        "approved_tone_descriptors": [
+          "clear",
+          "confident",
+          "helpful"
+        ],
+        "avoid_terms": [
+          "guaranteed",
+          "instant",
+          "#1",
+          "magic"
+        ],
+        "required_phrases": [
+          "Teams first"
+        ],
+        "style_notes": [
+          "Lead with the practical benefit before the feature.",
+          "Prefer specific workflow language over hype.",
+          "Use concise CTAs that reflect the brief."
+        ]
+      }
+    },
+    {
+      "name": "get_channel_spec",
+      "source": "server_context",
+      "arguments": {
+        "placement": "display_728x90"
+      },
+      "output": {
+        "placement": "display_728x90",
+        "channel": "display",
+        "max_headline_chars": 40,
+        "max_description_chars": 70,
+        "max_cta_chars": 18,
+        "requires_cta": true,
+        "notes": [
+          "Horizontal placement favors a sharper headline.",
+          "Descriptions should be trimmed aggressively."
+        ]
+      }
+    },
+    {
+      "name": "get_policy_rules",
+      "source": "server_context",
+      "arguments": {},
+      "output": {
+        "disallowed_claims": [
+          "guaranteed",
+          "instant",
+          "#1",
+          "risk-free"
+        ],
+        "required_disclaimer_terms": [
+          "Terms apply"
+        ],
+        "sensitive_terms": [
+          "free money",
+          "no effort",
+          "always wins"
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "2026-04-03T10:05:02.847357+00:00",
+      "message": "request_started",
+      "payload": {
+        "strategy": "tool_aware",
+        "provider": "ollama",
+        "campaign_name": "Fashion Ops Refresh"
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:06:56.797219+00:00",
+      "message": "provider_completed",
+      "payload": {
+        "provider": "ollama-chat",
+        "provider_key": "ollama",
+        "attempt": "primary",
+        "observed_latency_ms": 113949.27,
+        "prompt_version": "ollama-native-qwen3:4b-tool_aware-v2",
+        "tool_events": [
+          {
+            "name": "get_brand_rules",
+            "source": "server_context",
+            "arguments": {
+              "brand_key": "acme"
+            },
+            "output": {
+              "brand_name": "Acme Creative Studio",
+              "approved_tone_descriptors": [
+                "clear",
+                "confident",
+                "helpful"
+              ],
+              "avoid_terms": [
+                "guaranteed",
+                "instant",
+                "#1",
+                "magic"
+              ],
+              "required_phrases": [
+                "Teams first"
+              ],
+              "style_notes": [
+                "Lead with the practical benefit before the feature.",
+                "Prefer specific workflow language over hype.",
+                "Use concise CTAs that reflect the brief."
+              ]
+            }
+          },
+          {
+            "name": "get_channel_spec",
+            "source": "server_context",
+            "arguments": {
+              "placement": "display_728x90"
+            },
+            "output": {
+              "placement": "display_728x90",
+              "channel": "display",
+              "max_headline_chars": 40,
+              "max_description_chars": 70,
+              "max_cta_chars": 18,
+              "requires_cta": true,
+              "notes": [
+                "Horizontal placement favors a sharper headline.",
+                "Descriptions should be trimmed aggressively."
+              ]
+            }
+          },
+          {
+            "name": "get_policy_rules",
+            "source": "server_context",
+            "arguments": {},
+            "output": {
+              "disallowed_claims": [
+                "guaranteed",
+                "instant",
+                "#1",
+                "risk-free"
+              ],
+              "required_disclaimer_terms": [
+                "Terms apply"
+              ],
+              "sensitive_terms": [
+                "free money",
+                "no effort",
+                "always wins"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:06:56.799853+00:00",
+      "message": "repair_completed",
+      "payload": {
+        "failing_variant_count": 3,
+        "repaired_variant_count": 3
+      }
+    }
+  ]
+}

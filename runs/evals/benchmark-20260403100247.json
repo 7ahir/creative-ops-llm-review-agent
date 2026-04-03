@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-04-03T10:02:47.226391Z",
+  "dataset_path": "data/golden_set.json",
+  "cases_run": 3,
+  "benchmark_root": "runs/benchmarks/20260403100247",
+  "fallback_budget_ms": 1,
+  "scenarios": [
+    {
+      "scenario": "heuristic_tool_aware",
+      "provider": "heuristic",
+      "strategy": "tool_aware",
+      "model": "deterministic",
+      "average_score": 0.987,
+      "pass_rate": 1.0,
+      "average_latency_ms": 1.03,
+      "p95_latency_ms": 1.61,
+      "average_cost_usd": 0.0007,
+      "fallback_count": 0,
+      "fallback_rate": 0.0,
+      "provider_mix": {
+        "heuristic-provider": 3
+      },
+      "issue_counts": {
+        "message_clarity": 2,
+        "required_term": 2
+      },
+      "trace_paths": [
+        "runs/benchmarks/20260403100247/traces/20260403100247229415.json",
+        "runs/benchmarks/20260403100247/traces/20260403100247231604.json",
+        "runs/benchmarks/20260403100247/traces/20260403100247232851.json"
+      ]
+    },
+    {
+      "scenario": "ollama_tool_aware_direct",
+      "provider": "ollama",
+      "strategy": "tool_aware",
+      "model": "qwen3:4b",
+      "average_score": 0.99,
+      "pass_rate": 1.0,
+      "average_latency_ms": 122427.37,
+      "p95_latency_ms": 135613.07,
+      "average_cost_usd": 0.0,
+      "fallback_count": 0,
+      "fallback_rate": 0.0,
+      "provider_mix": {
+        "ollama-chat": 3
+      },
+      "issue_counts": {
+        "required_term": 2,
+        "message_clarity": 1
+      },
+      "trace_paths": [
+        "runs/benchmarks/20260403100247/traces/20260403100247234084.json",
+        "runs/benchmarks/20260403100247/traces/20260403100502847163.json",
+        "runs/benchmarks/20260403100247/traces/20260403100656801717.json"
+      ]
+    },
+    {
+      "scenario": "ollama_tool_aware_fallback",
+      "provider": "ollama",
+      "strategy": "tool_aware",
+      "model": "qwen3:4b",
+      "average_score": 0.987,
+      "pass_rate": 1.0,
+      "average_latency_ms": 4.3,
+      "p95_latency_ms": 7.06,
+      "average_cost_usd": 0.0007,
+      "fallback_count": 3,
+      "fallback_rate": 1.0,
+      "provider_mix": {
+        "heuristic-provider": 3
+      },
+      "issue_counts": {
+        "message_clarity": 2,
+        "required_term": 2
+      },
+      "trace_paths": [
+        "runs/benchmarks/20260403100247/traces/20260403100854517257.json",
+        "runs/benchmarks/20260403100247/traces/20260403100854525423.json",
+        "runs/benchmarks/20260403100247/traces/20260403100854528901.json"
+      ]
+    }
+  ]
+}

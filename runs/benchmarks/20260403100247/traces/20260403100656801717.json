@@ -1,0 +1,356 @@
+{
+  "trace_id": "20260403100656801717",
+  "created_at": "2026-04-03T10:08:54.515004Z",
+  "provider": "ollama-chat",
+  "strategy": "tool_aware",
+  "brief": {
+    "brief_id": null,
+    "brand_key": "acme",
+    "campaign_name": "Creative Workflow Push",
+    "product_name": "Acme Creative Studio",
+    "audience": "growth teams shipping paid social creative weekly",
+    "objective": "Improve confidence in social copy before launch",
+    "key_message": "Move from brief to review-ready copy with clearer brand and policy checks.",
+    "tone": "direct",
+    "offer_details": "Built for busy teams. Terms apply.",
+    "required_terms": [
+      "Terms apply"
+    ],
+    "forbidden_terms": [
+      "instant",
+      "#1"
+    ],
+    "call_to_action": "Try the review",
+    "channel": "social",
+    "placement": "social_1200x628",
+    "landing_page": null,
+    "locale": "en-US"
+  },
+  "variants": [
+    {
+      "variant_id": "variant-360f3bb3",
+      "headline": "Review-ready social copy in one click",
+      "description": "Clear brand checks before launch. No more guesswork.",
+      "cta": "Try the review",
+      "rationale": "Direct benefit: one-click review. Avoids forbidden terms."
+    },
+    {
+      "variant_id": "variant-eae3fe98",
+      "headline": "Ship confident social creative weekly",
+      "description": "Brand checks ensure policy compliance. Ready for launch.",
+      "cta": "Try the review",
+      "rationale": "Matches audience goal: confident weekly launches."
+    },
+    {
+      "variant_id": "variant-d6f476f2",
+      "headline": "Social copy that passes brand checks",
+      "description": "Policy-compliant creative ready for launch. No delays.",
+      "cta": "Try the review",
+      "rationale": "Highlights practical benefit: policy compliance."
+    }
+  ],
+  "reviews": [
+    {
+      "variant_id": "variant-360f3bb3",
+      "passed": true,
+      "score": {
+        "overall": 0.97,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        },
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-eae3fe98",
+      "passed": true,
+      "score": {
+        "overall": 0.97,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        },
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-d6f476f2",
+      "passed": true,
+      "score": {
+        "overall": 0.97,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        },
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    }
+  ],
+  "best_variant_id": "variant-360f3bb3",
+  "prompt_version": "ollama-native-qwen3:4b-tool_aware-v2",
+  "metrics": {
+    "total_latency_ms": 117714.55,
+    "average_variant_score": 0.97,
+    "passed_variant_count": 3,
+    "total_variant_count": 3,
+    "estimated_cost_usd": 0.0
+  },
+  "stages": [
+    {
+      "name": "load_context",
+      "duration_ms": 1.43,
+      "metadata": {
+        "brand_key": "acme",
+        "placement": "social_1200x628"
+      }
+    },
+    {
+      "name": "generate_variants",
+      "duration_ms": 117709.86,
+      "metadata": {
+        "strategy": "tool_aware",
+        "provider": "ollama",
+        "attempt": "primary"
+      }
+    },
+    {
+      "name": "review_variants",
+      "duration_ms": 0.87,
+      "metadata": {
+        "variant_count": 3
+      }
+    },
+    {
+      "name": "select_best_variant",
+      "duration_ms": 0.13,
+      "metadata": {
+        "variant_count": 3
+      }
+    }
+  ],
+  "tools_consulted": [
+    "get_brand_rules",
+    "get_channel_spec",
+    "get_policy_rules"
+  ],
+  "fallback": null,
+  "trace_path": null,
+  "provider_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "estimated_cost_usd": 0.0
+  },
+  "prompt_preview": "Model=qwen3:4b Strategy=tool_aware Context=server_injected Campaign=Creative Workflow Push Placement=social_1200x628",
+  "provider_raw_output_text": "{\n  \"variants\": [\n    {\n      \"headline\": \"Review-ready social copy in one click\",\n      \"description\": \"Clear brand checks before launch. No more guesswork.\",\n      \"cta\": \"Try the review\"\n   ,\n    \"rationale\": \"Direct benefit: one-click review. Avoids forbidden terms.\"\n    },\n    {\n      \"headline\": \"Ship confident social creative weekly\",\n      \"description\": \"Brand checks ensure policy compliance. Ready for launch.\",\n      \"cta\": \"Try the review\"\n    ,\n    \"rationale\": \"Matches audience goal: confident weekly launches.\"\n    },\n    {\n      \"headline\": \"Social copy that passes brand checks\",\n      \"description\": \"Policy-compliant creative ready for launch. No delays.\",\n      \"cta\": \"Try the review\"\n    ,\n    \"rationale\": \"Highlights practical benefit: policy compliance.\"\n    }\n  ]\n}\n",
+  "provider_tool_events": [
+    {
+      "name": "get_brand_rules",
+      "source": "server_context",
+      "arguments": {
+        "brand_key": "acme"
+      },
+      "output": {
+        "brand_name": "Acme Creative Studio",
+        "approved_tone_descriptors": [
+          "clear",
+          "confident",
+          "helpful"
+        ],
+        "avoid_terms": [
+          "guaranteed",
+          "instant",
+          "#1",
+          "magic"
+        ],
+        "required_phrases": [
+          "Teams first"
+        ],
+        "style_notes": [
+          "Lead with the practical benefit before the feature.",
+          "Prefer specific workflow language over hype.",
+          "Use concise CTAs that reflect the brief."
+        ]
+      }
+    },
+    {
+      "name": "get_channel_spec",
+      "source": "server_context",
+      "arguments": {
+        "placement": "social_1200x628"
+      },
+      "output": {
+        "placement": "social_1200x628",
+        "channel": "social",
+        "max_headline_chars": 50,
+        "max_description_chars": 110,
+        "max_cta_chars": 18,
+        "requires_cta": true,
+        "notes": [
+          "This slot tolerates more context, but clarity still wins."
+        ]
+      }
+    },
+    {
+      "name": "get_policy_rules",
+      "source": "server_context",
+      "arguments": {},
+      "output": {
+        "disallowed_claims": [
+          "guaranteed",
+          "instant",
+          "#1",
+          "risk-free"
+        ],
+        "required_disclaimer_terms": [
+          "Terms apply"
+        ],
+        "sensitive_terms": [
+          "free money",
+          "no effort",
+          "always wins"
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "2026-04-03T10:06:56.801855+00:00",
+      "message": "request_started",
+      "payload": {
+        "strategy": "tool_aware",
+        "provider": "ollama",
+        "campaign_name": "Creative Workflow Push"
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:08:54.509915+00:00",
+      "message": "provider_completed",
+      "payload": {
+        "provider": "ollama-chat",
+        "provider_key": "ollama",
+        "attempt": "primary",
+        "observed_latency_ms": 117707.24,
+        "prompt_version": "ollama-native-qwen3:4b-tool_aware-v2",
+        "tool_events": [
+          {
+            "name": "get_brand_rules",
+            "source": "server_context",
+            "arguments": {
+              "brand_key": "acme"
+            },
+            "output": {
+              "brand_name": "Acme Creative Studio",
+              "approved_tone_descriptors": [
+                "clear",
+                "confident",
+                "helpful"
+              ],
+              "avoid_terms": [
+                "guaranteed",
+                "instant",
+                "#1",
+                "magic"
+              ],
+              "required_phrases": [
+                "Teams first"
+              ],
+              "style_notes": [
+                "Lead with the practical benefit before the feature.",
+                "Prefer specific workflow language over hype.",
+                "Use concise CTAs that reflect the brief."
+              ]
+            }
+          },
+          {
+            "name": "get_channel_spec",
+            "source": "server_context",
+            "arguments": {
+              "placement": "social_1200x628"
+            },
+            "output": {
+              "placement": "social_1200x628",
+              "channel": "social",
+              "max_headline_chars": 50,
+              "max_description_chars": 110,
+              "max_cta_chars": 18,
+              "requires_cta": true,
+              "notes": [
+                "This slot tolerates more context, but clarity still wins."
+              ]
+            }
+          },
+          {
+            "name": "get_policy_rules",
+            "source": "server_context",
+            "arguments": {},
+            "output": {
+              "disallowed_claims": [
+                "guaranteed",
+                "instant",
+                "#1",
+                "risk-free"
+              ],
+              "required_disclaimer_terms": [
+                "Terms apply"
+              ],
+              "sensitive_terms": [
+                "free money",
+                "no effort",
+                "always wins"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

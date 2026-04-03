@@ -1,0 +1,325 @@
+{
+  "trace_id": "20260403100247234084",
+  "created_at": "2026-04-03T10:05:02.845686Z",
+  "provider": "ollama-chat",
+  "strategy": "tool_aware",
+  "brief": {
+    "brief_id": null,
+    "brand_key": "acme",
+    "campaign_name": "Retail Spring Launch",
+    "product_name": "Acme Creative Studio",
+    "audience": "performance marketers at retail brands",
+    "objective": "Speed up banner review without losing compliance",
+    "key_message": "Review banner copy against brand and placement constraints before launch.",
+    "tone": "confident",
+    "offer_details": "Built for busy teams. Terms apply.",
+    "required_terms": [
+      "Terms apply"
+    ],
+    "forbidden_terms": [
+      "guaranteed",
+      "instant"
+    ],
+    "call_to_action": "Book a demo",
+    "channel": "display",
+    "placement": "display_300x250",
+    "landing_page": "https://example.com/demo",
+    "locale": "en-US"
+  },
+  "variants": [
+    {
+      "variant_id": "variant-7165bb87",
+      "headline": "Teams first review before launch",
+      "description": "Built for busy teams. Terms apply.",
+      "cta": "Book a demo",
+      "rationale": "Auto-repaired for policy, brand, and placement compliance."
+    },
+    {
+      "variant_id": "variant-a41dd8ec",
+      "headline": "Teams first banner review",
+      "description": "Acme Creative Studio for busy teams. Terms apply.",
+      "cta": "Book a demo",
+      "rationale": "Auto-repaired for policy, brand, and placement compliance."
+    },
+    {
+      "variant_id": "variant-a5aa6cba",
+      "headline": "Review copy, Teams first",
+      "description": "Review copy with clear checks. Terms apply.",
+      "cta": "Book a demo",
+      "rationale": "Auto-repaired for policy, brand, and placement compliance."
+    }
+  ],
+  "reviews": [
+    {
+      "variant_id": "variant-7165bb87",
+      "passed": true,
+      "score": {
+        "overall": 1.0,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 1.0
+      },
+      "issues": []
+    },
+    {
+      "variant_id": "variant-a41dd8ec",
+      "passed": true,
+      "score": {
+        "overall": 1.0,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 1.0
+      },
+      "issues": []
+    },
+    {
+      "variant_id": "variant-a5aa6cba",
+      "passed": true,
+      "score": {
+        "overall": 1.0,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 1.0
+      },
+      "issues": []
+    }
+  ],
+  "best_variant_id": "variant-7165bb87",
+  "prompt_version": "ollama-native-qwen3:4b-tool_aware-v2",
+  "metrics": {
+    "total_latency_ms": 135613.07,
+    "average_variant_score": 1.0,
+    "passed_variant_count": 3,
+    "total_variant_count": 3,
+    "estimated_cost_usd": 0.0
+  },
+  "stages": [
+    {
+      "name": "load_context",
+      "duration_ms": 0.16,
+      "metadata": {
+        "brand_key": "acme",
+        "placement": "display_300x250"
+      }
+    },
+    {
+      "name": "generate_variants",
+      "duration_ms": 135608.28,
+      "metadata": {
+        "strategy": "tool_aware",
+        "provider": "ollama",
+        "attempt": "primary"
+      }
+    },
+    {
+      "name": "review_variants",
+      "duration_ms": 0.69,
+      "metadata": {
+        "variant_count": 3
+      }
+    },
+    {
+      "name": "repair_variants",
+      "duration_ms": 1.72,
+      "metadata": {
+        "failing_variant_count": 3
+      }
+    },
+    {
+      "name": "select_best_variant",
+      "duration_ms": 0.11,
+      "metadata": {
+        "variant_count": 3
+      }
+    }
+  ],
+  "tools_consulted": [
+    "get_brand_rules",
+    "get_channel_spec",
+    "get_policy_rules"
+  ],
+  "fallback": null,
+  "trace_path": null,
+  "provider_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "estimated_cost_usd": 0.0
+  },
+  "prompt_preview": "Model=qwen3:4b Strategy=tool_aware Context=server_injected Campaign=Retail Spring Launch Placement=display_300x250",
+  "provider_raw_output_text": "{\n  \"variants\": [\n    {\n      \"headline\": \"Review banners faster without compliance risks\",\n      \"description\": \"Acme Creative Studio: Streamline your spring launch checks with precision.\",\n      \"cta\": \"Book demo\"\n   ,\n    \"rationale\": \"Highlights speed and compliance for retail marketers\"\n    },\n    {\n      \"headline\": \"Ensure brand-safe spring banners in minutes\",\n      \"description\": \"Ac: Fast, compliant banner reviews for retail teams.\",\n      \"cta\": \"Book demo\"\n    ,\n    \"rationale\": \"Focuses on time savings and brand safety\"\n    },\n    {\n      \"headline\": \"Spring banners compliant, launched faster\",\n      \"description\": \"Acme Creative Studio: Pre-check your banners before launch.\",\n      \"cta\": \"Book demo\"\n    ,\n    \"rationale\": \"Directly ties compliance to speed\"\n    }\n  ]\n}\n",
+  "provider_tool_events": [
+    {
+      "name": "get_brand_rules",
+      "source": "server_context",
+      "arguments": {
+        "brand_key": "acme"
+      },
+      "output": {
+        "brand_name": "Acme Creative Studio",
+        "approved_tone_descriptors": [
+          "clear",
+          "confident",
+          "helpful"
+        ],
+        "avoid_terms": [
+          "guaranteed",
+          "instant",
+          "#1",
+          "magic"
+        ],
+        "required_phrases": [
+          "Teams first"
+        ],
+        "style_notes": [
+          "Lead with the practical benefit before the feature.",
+          "Prefer specific workflow language over hype.",
+          "Use concise CTAs that reflect the brief."
+        ]
+      }
+    },
+    {
+      "name": "get_channel_spec",
+      "source": "server_context",
+      "arguments": {
+        "placement": "display_300x250"
+      },
+      "output": {
+        "placement": "display_300x250",
+        "channel": "display",
+        "max_headline_chars": 35,
+        "max_description_chars": 90,
+        "max_cta_chars": 18,
+        "requires_cta": true,
+        "notes": [
+          "Keep the headline compact because the slot is visually dense.",
+          "Descriptions should land the value quickly."
+        ]
+      }
+    },
+    {
+      "name": "get_policy_rules",
+      "source": "server_context",
+      "arguments": {},
+      "output": {
+        "disallowed_claims": [
+          "guaranteed",
+          "instant",
+          "#1",
+          "risk-free"
+        ],
+        "required_disclaimer_terms": [
+          "Terms apply"
+        ],
+        "sensitive_terms": [
+          "free money",
+          "no effort",
+          "always wins"
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "2026-04-03T10:02:47.234110+00:00",
+      "message": "request_started",
+      "payload": {
+        "strategy": "tool_aware",
+        "provider": "ollama",
+        "campaign_name": "Retail Spring Launch"
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:05:02.840461+00:00",
+      "message": "provider_completed",
+      "payload": {
+        "provider": "ollama-chat",
+        "provider_key": "ollama",
+        "attempt": "primary",
+        "observed_latency_ms": 135607.48,
+        "prompt_version": "ollama-native-qwen3:4b-tool_aware-v2",
+        "tool_events": [
+          {
+            "name": "get_brand_rules",
+            "source": "server_context",
+            "arguments": {
+              "brand_key": "acme"
+            },
+            "output": {
+              "brand_name": "Acme Creative Studio",
+              "approved_tone_descriptors": [
+                "clear",
+                "confident",
+                "helpful"
+              ],
+              "avoid_terms": [
+                "guaranteed",
+                "instant",
+                "#1",
+                "magic"
+              ],
+              "required_phrases": [
+                "Teams first"
+              ],
+              "style_notes": [
+                "Lead with the practical benefit before the feature.",
+                "Prefer specific workflow language over hype.",
+                "Use concise CTAs that reflect the brief."
+              ]
+            }
+          },
+          {
+            "name": "get_channel_spec",
+            "source": "server_context",
+            "arguments": {
+              "placement": "display_300x250"
+            },
+            "output": {
+              "placement": "display_300x250",
+              "channel": "display",
+              "max_headline_chars": 35,
+              "max_description_chars": 90,
+              "max_cta_chars": 18,
+              "requires_cta": true,
+              "notes": [
+                "Keep the headline compact because the slot is visually dense.",
+                "Descriptions should land the value quickly."
+              ]
+            }
+          },
+          {
+            "name": "get_policy_rules",
+            "source": "server_context",
+            "arguments": {},
+            "output": {
+              "disallowed_claims": [
+                "guaranteed",
+                "instant",
+                "#1",
+                "risk-free"
+              ],
+              "required_disclaimer_terms": [
+                "Terms apply"
+              ],
+              "sensitive_terms": [
+                "free money",
+                "no effort",
+                "always wins"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:05:02.845054+00:00",
+      "message": "repair_completed",
+      "payload": {
+        "failing_variant_count": 3,
+        "repaired_variant_count": 3
+      }
+    }
+  ]
+}

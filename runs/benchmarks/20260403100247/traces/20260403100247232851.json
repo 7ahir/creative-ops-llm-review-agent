@@ -1,0 +1,198 @@
+{
+  "trace_id": "20260403100247232851",
+  "created_at": "2026-04-03T10:02:47.233566Z",
+  "provider": "heuristic-provider",
+  "strategy": "tool_aware",
+  "brief": {
+    "brief_id": null,
+    "brand_key": "acme",
+    "campaign_name": "Creative Workflow Push",
+    "product_name": "Acme Creative Studio",
+    "audience": "growth teams shipping paid social creative weekly",
+    "objective": "Improve confidence in social copy before launch",
+    "key_message": "Move from brief to review-ready copy with clearer brand and policy checks.",
+    "tone": "direct",
+    "offer_details": "Built for busy teams. Terms apply.",
+    "required_terms": [
+      "Terms apply"
+    ],
+    "forbidden_terms": [
+      "instant",
+      "#1"
+    ],
+    "call_to_action": "Try the review",
+    "channel": "social",
+    "placement": "social_1200x628",
+    "landing_page": null,
+    "locale": "en-US"
+  },
+  "variants": [
+    {
+      "variant_id": "variant-4bbe4647",
+      "headline": "Acme Creative Studio: Move from brief to review-r\u2026",
+      "description": "Move from brief to review-ready copy with clearer brand and policy checks for growth teams shipping paid soci\u2026",
+      "cta": "Try the review",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    },
+    {
+      "variant_id": "variant-e5a4b3e0",
+      "headline": "Teams first Acme Creative Studio",
+      "description": "Built for growth teams shipping paid social creative weekly. Built for busy teams. Terms apply",
+      "cta": "Try the review",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    },
+    {
+      "variant_id": "variant-ccef0bfe",
+      "headline": "Move from brief to banner with Acme Creative Stud\u2026",
+      "description": "Move from brief to review-ready copy with clearer brand and policy checks. Clear review signals before launch",
+      "cta": "Try the review",
+      "rationale": "Constraint-aware variant using brand phrase, placement limits, and concise CTA."
+    }
+  ],
+  "reviews": [
+    {
+      "variant_id": "variant-4bbe4647",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 1.0
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-e5a4b3e0",
+      "passed": true,
+      "score": {
+        "overall": 0.99,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 1.0,
+        "message_clarity": 0.96
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "message_clarity",
+          "message": "Output does not clearly echo the primary campaign message."
+        }
+      ]
+    },
+    {
+      "variant_id": "variant-ccef0bfe",
+      "passed": true,
+      "score": {
+        "overall": 0.98,
+        "length_compliance": 1.0,
+        "policy_compliance": 1.0,
+        "brand_alignment": 0.92,
+        "message_clarity": 1.0
+      },
+      "issues": [
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Terms apply."
+        },
+        {
+          "severity": "low",
+          "category": "required_term",
+          "message": "Missing preferred phrase or required term: Teams first."
+        }
+      ]
+    }
+  ],
+  "best_variant_id": "variant-e5a4b3e0",
+  "prompt_version": "heuristic-tool-aware-v2",
+  "metrics": {
+    "total_latency_ms": 0.71,
+    "average_variant_score": 0.983,
+    "passed_variant_count": 3,
+    "total_variant_count": 3,
+    "estimated_cost_usd": 0.0007
+  },
+  "stages": [
+    {
+      "name": "load_context",
+      "duration_ms": 0.17,
+      "metadata": {
+        "brand_key": "acme",
+        "placement": "social_1200x628"
+      }
+    },
+    {
+      "name": "generate_variants",
+      "duration_ms": 0.11,
+      "metadata": {
+        "strategy": "tool_aware",
+        "provider": "heuristic",
+        "attempt": "primary"
+      }
+    },
+    {
+      "name": "review_variants",
+      "duration_ms": 0.07,
+      "metadata": {
+        "variant_count": 3
+      }
+    },
+    {
+      "name": "select_best_variant",
+      "duration_ms": 0.03,
+      "metadata": {
+        "variant_count": 3
+      }
+    }
+  ],
+  "tools_consulted": [
+    "brand_rules",
+    "channel_specs",
+    "policy_rules"
+  ],
+  "fallback": null,
+  "trace_path": null,
+  "provider_usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 113,
+    "estimated_cost_usd": 0.0007
+  },
+  "prompt_preview": "Campaign: Creative Workflow Push\nAudience: growth teams shipping paid social creative weekly\nObjective: Improve confidence in social copy before launch\nKey message: Move from brief to review-ready copy with clearer brand and policy checks.\nStrategy: tool_aware\nBrand notes: Lead with the practical benefit before the feature., Prefer specific workflow language over hype.\nAvoid terms: guaranteed, instant, #1, magic\nPlacement caps: headline=50 description=110 cta=18\nPolicy disallowed claims: guaranteed, instant, #1",
+  "provider_raw_output_text": null,
+  "provider_tool_events": [],
+  "events": [
+    {
+      "timestamp": "2026-04-03T10:02:47.232879+00:00",
+      "message": "request_started",
+      "payload": {
+        "strategy": "tool_aware",
+        "provider": "heuristic",
+        "campaign_name": "Creative Workflow Push"
+      }
+    },
+    {
+      "timestamp": "2026-04-03T10:02:47.233220+00:00",
+      "message": "provider_completed",
+      "payload": {
+        "provider": "heuristic-provider",
+        "provider_key": "heuristic",
+        "attempt": "primary",
+        "observed_latency_ms": 0.04,
+        "prompt_version": "heuristic-tool-aware-v2",
+        "tool_events": []
+      }
+    }
+  ]
+}
